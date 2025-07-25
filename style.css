@@ -1,52 +1,66 @@
+
 body {
-  margin: 0;
-  font-family: sans-serif;
-  background-color: #000;
-  color: #ffd700;
-  text-align: center;
+    font-family: Tahoma, sans-serif;
+    background: #111;
+    color: #f0d75f;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
 }
 
 header {
-  padding: 2rem;
-  background-color: #111;
-  border-bottom: 1px solid #ffd700;
+    background: #222;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'IranNastaliq', serif;
+    font-size: 2rem;
+    color: #f0d75f;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #f0d75f;
+    text-decoration: none;
 }
 
 .products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
 }
 
-.product-card {
-  background-color: #222;
-  border: 1px solid #444;
-  margin: 1rem;
-  padding: 1rem;
-  width: 250px;
-  border-radius: 10px;
+.product {
+    background: #222;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
 }
 
-.product-card img {
-  width: 100%;
-  border-radius: 5px;
+.filters {
+    padding: 1rem 2rem;
+    background: #1a1a1a;
 }
 
-.order-btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 0.5rem 1rem;
-  background-color: #ffd700;
-  color: #000;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+.cart {
+    padding: 2rem;
+    background: #1a1a1a;
 }
 
 footer {
-  padding: 1rem;
-  background-color: #111;
-  border-top: 1px solid #444;
-  margin-top: 2rem;
+    text-align: center;
+    padding: 1rem;
+    background: #000;
+    font-size: 0.9rem;
 }
