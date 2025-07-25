@@ -1,101 +1,159 @@
-body {
-  font-family: 'Vazirmatn', sans-serif;
-  direction: rtl;
+* {
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7;
-  color: #222;
+  box-sizing: border-box;
+  font-family: 'Vazirmatn', sans-serif;
 }
 
-header {
-  background-color: #000;
+body {
+  background-color: #f9f9f9;
+  color: #111;
+  line-height: 1.7;
+}
+
+/* نوار بالا */
+.topbar {
+  background: #000;
   color: gold;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
+}
+.topbar .container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .logo {
   font-size: 2rem;
   font-weight: bold;
-  font-family: 'IranNastaliq', serif; /* اگر فونت نستعلیق جداگانه داری */
+  font-family: "IranNastaliq", cursive;
 }
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-nav a {
-  color: gold;
+.nav a {
+  margin-left: 1rem;
   text-decoration: none;
+  color: gold;
+  font-weight: bold;
+}
+.cart {
+  background-color: gold;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 }
 
+/* اسلایدر */
 .hero {
-  background-color: #111;
-  color: white;
-  padding: 3rem 2rem;
+  background: linear-gradient(to right, black, #333);
+  color: gold;
+  padding: 4rem 2rem;
   text-align: center;
 }
-
-.filters {
-  padding: 2rem;
-  background-color: #fff;
-}
-
-.filter-box {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.products {
-  padding: 2rem;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
-
-.product-card {
-  background-color: white;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.product-card h3 {
-  margin: 0.5rem 0;
-}
-
-.product-image {
+.hero h1 {
   font-size: 3rem;
 }
-
-button {
-  background-color: gold;
-  border: none;
-  padding: 0.5rem 1rem;
-  margin-top: 0.5rem;
-  cursor: pointer;
+.hero p {
+  margin: 1rem 0;
+}
+.btn {
+  background: gold;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
   font-weight: bold;
 }
 
-.about, .contact {
-  background-color: #eee;
-  padding: 2rem;
+/* دسته بندی */
+.categories {
+  background: #fff;
+  padding: 3rem 2rem;
   text-align: center;
 }
+.categories h2 {
+  margin-bottom: 2rem;
+}
+.category-list {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.category {
+  background: black;
+  color: gold;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.category:hover {
+  background: #444;
+}
 
+/* محصولات */
+.product-section {
+  padding: 3rem 2rem;
+  background: #f4f4f4;
+}
+.filters {
+  margin-bottom: 2rem;
+}
+.filters select {
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+.products {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+}
+.product-card h3 {
+  font-size: 1.2rem;
+  color: black;
+}
+.product-card span {
+  display: block;
+  margin: 1rem 0;
+  font-weight: bold;
+  color: green;
+}
+.product-card button {
+  background: black;
+  color: gold;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.product-card button:hover {
+  background: gold;
+  color: black;
+}
+
+/* فوتر */
 footer {
-  background-color: #000;
+  background: #000;
   color: gold;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  padding: 2rem;
+}
+.contact-info p {
+  margin: 0.5rem 0;
+}
+.copy {
+  margin-top: 1rem;
+  font-size: 0.9rem;
 }
