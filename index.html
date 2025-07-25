@@ -1,31 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Raz Bou | راز بو</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Razbou | فروشگاه پوشاک</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      direction: rtl;
+      background: #000;
+      color: #ffd700;
+    }
+    header {
+      background: #111;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #ffd700;
+    }
+    nav a {
+      color: #ffd700;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 36px;
+      color: #ffd700;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .product {
+      background: #222;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    .about, .contact {
+      padding: 40px 20px;
+      background: #111;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+    }
+    footer {
+      background: #000;
+      padding: 20px;
+      text-align: center;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>راز بو</h1>
-    <p>فروش تخصصی عطرهای خاص</p>
+    <h1>رازبو</h1>
+    <nav>
+      <a href="#home">خانه</a>
+      <a href="#products">محصولات</a>
+      <a href="#about">درباره ما</a>
+      <a href="#contact">تماس</a>
+    </nav>
   </header>
 
-  <section class="products">
-    <div class="product-card">
-      <img src="https://via.placeholder.com/200x250" alt="Aventus for Him" />
-      <h2>Aventus for Him</h2>
-      <p>100ml • مردانه</p>
-      <p class="price">۴۹۰,۰۰۰ تومان</p>
-      <a href="https://wa.me/98XXXXXXXXXX?text=سلام، برای خرید Aventus می‌خوام سفارش بدم" target="_blank" class="order-btn">سفارش در واتساپ</a>
-    </div>
+  <section class="hero" id="home">
+    <h2>به فروشگاه رازبو خوش آمدید</h2>
+    <p>استایل خاص، کیفیت عالی، تجربه لوکس</p>
+  </section>
 
-    <!-- محصول‌های بیشتر رو همین‌جا اضافه می‌کنم به‌زودی -->
+  <section class="products" id="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/300x400" alt="محصول ۱">
+      <h3>مانتو مشکی</h3>
+      <p>قیمت: ۴۹۰ هزار تومان</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x400" alt="محصول ۲">
+      <h3>شومیز طلایی</h3>
+      <p>قیمت: ۳۸۰ هزار تومان</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x400" alt="محصول ۳">
+      <h3>کت جین زنانه</h3>
+      <p>قیمت: ۶۲۰ هزار تومان</p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>درباره ما</h2>
+    <p>رازبو یک برند پوشاک خاص و باکیفیت است که با ترکیب سبک مدرن و طراحی متفاوت، تجربه‌ای خاص از پوشیدن را ارائه می‌دهد.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>تماس با ما</h2>
+    <form>
+      <input type="text" placeholder="نام شما">
+      <input type="email" placeholder="ایمیل">
+      <textarea placeholder="پیام شما"></textarea>
+      <button type="submit">ارسال پیام</button>
+    </form>
   </section>
 
   <footer>
-    <p>© 2025 Raz Bou - All rights reserved</p>
+    <p>© 2025 Razbou | تمام حقوق محفوظ است</p>
   </footer>
+
 </body>
 </html>
