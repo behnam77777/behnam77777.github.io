@@ -3,70 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>رازبو | فروشگاه پوشاک</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Razbou | فروشگاه عطر</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1 class="logo">رازبو</h1>
+    <div class="logo">رازبو</div>
     <nav>
       <ul>
-        <li><a href="#">زنانه</a></li>
-        <li><a href="#">مردانه</a></li>
-        <li><a href="#">بچگانه</a></li>
-        <li><a href="#">سبد خرید 🛒</a></li>
+        <li><a href="#">خانه</a></li>
+        <li><a href="#">محصولات</a></li>
+        <li><a href="#">دسته‌بندی‌ها</a></li>
+        <li><a href="#">سبد خرید</a></li>
+        <li><a href="#">تماس با ما</a></li>
       </ul>
     </nav>
   </header>
 
+  <section class="hero">
+    <h1>به فروشگاه عطر رازبو خوش آمدید</h1>
+    <p>منتخب بهترین عطرهای مردانه و زنانه جهان</p>
+  </section>
+
   <section class="filters">
-    <label>سایز:
+    <h2>فیلتر محصولات</h2>
+    <div class="filter-box">
       <select>
-        <option>همه</option>
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
+        <option>دسته‌بندی</option>
+        <option>زنانه</option>
+        <option>مردانه</option>
+        <option>یونیسکس</option>
       </select>
-    </label>
-    <label>رنگ:
       <select>
-        <option>همه</option>
-        <option>مشکی</option>
-        <option>سفید</option>
-        <option>طلایی</option>
-      </select>
-    </label>
-    <label>قیمت:
-      <select>
-        <option>همه</option>
-        <option>زیر ۵۰۰</option>
+        <option>قیمت</option>
+        <option>کمتر از ۵۰۰ هزار</option>
         <option>۵۰۰ تا ۱ میلیون</option>
         <option>بیشتر از ۱ میلیون</option>
       </select>
-    </label>
+    </div>
   </section>
 
-  <main class="product-grid">
-    <div class="product">
-      <img src="https://via.placeholder.com/300x400?text=مانتو+طلایی" alt="محصول نمونه">
-      <h2>مانتو طلایی</h2>
-      <p>قیمت: ۷۵۰٬۰۰۰ تومان</p>
-      <button onclick="addToCart('مانتو طلایی')">افزودن به سبد</button>
+  <section class="products">
+    <h2>محصولات پیشنهادی</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-image">🎁</div>
+        <h3>Creed Aventus</h3>
+        <p>عطر مردانه، پرفروش‌ترین</p>
+        <button>افزودن به سبد</button>
+      </div>
+      <div class="product-card">
+        <div class="product-image">🌸</div>
+        <h3>Chanel Coco Mademoiselle</h3>
+        <p>عطر زنانه با رایحه گل</p>
+        <button>افزودن به سبد</button>
+      </div>
+      <div class="product-card">
+        <div class="product-image">🔥</div>
+        <h3>Dior Sauvage</h3>
+        <p>مردانه، ماندگار و قوی</p>
+        <button>افزودن به سبد</button>
+      </div>
+      <!-- عطرهای بیشتر را می‌توان اضافه کرد -->
     </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/300x400?text=کت+مردانه" alt="محصول نمونه">
-      <h2>کت مردانه مشکی</h2>
-      <p>قیمت: ۱٬۲۵۰٬۰۰۰ تومان</p>
-      <button onclick="addToCart('کت مردانه')">افزودن به سبد</button>
-    </div>
-  </main>
+  </section>
+
+  <section class="about">
+    <h2>درباره رازبو</h2>
+    <p>ما در فروشگاه رازبو با ارائه نسخه‌های مشابه اصل از برندهای مطرح، به‌دنبال تجربه‌ای لوکس با قیمتی اقتصادی برای شما هستیم.</p>
+  </section>
+
+  <section class="contact">
+    <h2>تماس با ما</h2>
+    <p>برای سفارش سریع در واتساپ پیام دهید:</p>
+    <p><a href="https://wa.me/989115541200" target="_blank">۰۹۱۱۵۵۴۱۲۰۰</a></p>
+    <p>ایمیل: <a href="mailto:Behnam.naghash1382@gmail.com">Behnam.naghash1382@gmail.com</a></p>
+  </section>
 
   <footer>
-    <p>ارتباط با ما در واتساپ: <a href="https://wa.me/989115541200">۰۹۱۱۵۵۴۱۲۰۰</a></p>
-    <p>ایمیل: <a href="mailto:Behnam.naghash1382@gmail.com">Behnam.naghash1382@gmail.com</a></p>
+    <p>© 2025 Razbou.com - تمامی حقوق محفوظ است.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
